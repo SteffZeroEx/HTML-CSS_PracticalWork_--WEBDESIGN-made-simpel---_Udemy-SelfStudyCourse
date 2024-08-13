@@ -7,6 +7,7 @@ Hell Grau:      #E5E5E5
 Rot:            #A62C21
 */
 
+/* === GLOBAL === */
 html {
   font-size: 16px;
 }
@@ -21,6 +22,18 @@ body {
   box-sizing: border-box;
 }
 
+/* === GENERELLES === */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.active {
+  background-color: #a62c21 !important;
+}
+
 /* === NAVIGATIONSLEISTE === */
 
 .header-nav {
@@ -30,49 +43,108 @@ body {
   position: relative;
   font-weight: bold;
 }
-.header-nav > a > img {
+.header-nav a > img {
   height: 30px;
   width: auto;
-  position: absolute;
-  left: 2rem;
-  top: 0.55rem;
   font-size: 1.1rem;
+  float: left;
+  margin: 0.55rem;
 }
-.header-nav > ul {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 2rem;
-    height: 100%;
+.header-nav ul {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  float: right;
 }
-.header-nav > ul > li {
+.header-nav ul > li {
   display: inline-block;
   height: 100%;
-  padding: 0 .4rem 0 .4rem
-  ;
+  padding: 0 0.4rem 0 0.4rem;
+  text-align: center;
 }
-.header-nav > ul > li > a {
-    margin-top: .8rem;
-    display: inline-block;
+
+.header-nav ul > li > a {
+  margin-top: 0.8rem;
+  display: inline-block;
 }
-.header-nav > ul > li > a:link {
+.header-nav ul > li > a:link {
   color: #fff;
   text-decoration: none;
 }
-.header-nav > ul > li > a:hover {
+.header-nav ul > li > a:hover {
   color: #e5e5e5;
   text-decoration: none;
 }
-.header-nav > ul > li > a:active {
+.header-nav ul > li > a:active {
   color: #e5e5e5;
   text-decoration: none;
 }
-.header-nav > ul > li > a:visited {
+.header-nav ul > li > a:visited {
   color: #fff;
   text-decoration: none;
 }
-.active {
-    background-color: #A62C21;
+
+.header-nav .col-6 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.header-nav .container,
+.header-nav .row,
+.header-nav .col-6 {
+  height: 100%;
+}
+
+/* === NAVIGATIONSLEISTE (MOBIL) === */
+
+.mobile-nav-button {
+  color: #fff;
+  float: right;
+  font-size: 2rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 37px;
+  height: 37px;
+  position: relative;
+  margin-top: 0.4rem;
+  margin-bottom: 8.5px;
+}
+.mobile-nav-button > span {
+  position: absolute;
+  bottom: -2px;
+  left: 7px;
+}
+.mobile-nav-content > ul > li {
+  display: block;
+  background-color: #3d3f45;
+  height: 50px;
+  padding: 0 1.2rem;
+}
+
+.mobile-nav-dropdown {
+  position: relative;
+  float: right;
+}
+.mobile-nav-content {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+}
+.mobile-nav-dropdown:hover > .mobile-nav-content {
+  display: block;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
 }
 
 /* === HEADER-BANNER === */
@@ -104,7 +176,9 @@ Wie viel % von 1920px sind 400px?
   background-size: contain;
 }
 
-/* === GRID-SYSTEM (SICHTBARKEIT) === */
+/*
+
+=== GRID-SYSTEM (SICHTBARKEIT) === 
 
 .border, .border * {
   border: 1px solid #91c4ff;
@@ -121,6 +195,7 @@ p {
   text-align: center;
 }
 
+*/
 /* === GRID-SYSTEM === */
 
 .container {
@@ -133,19 +208,27 @@ p {
   content: "";
   clear: both;
   display: block;
-} /* clearfix-Hack  */
+}
+/* clearfix-Hack  */
 
 [class*="col-"] {
   float: left;
   min-height: 1px;
-  padding: .8rem;
-
+  padding: 0.8rem;
 }
 
-.col-1 { width: 16.666%;}
-.col-2 { width: 33.333%;}
-.col-3 { width: 50%;    }
-.col-6 { width: 100%;   }
+.col-1 {
+  width: 16.666%;
+}
+.col-2 {
+  width: 33.333%;
+}
+.col-3 {
+  width: 50%;
+}
+.col-6 {
+  width: 100%;
+}
 
 /* 
   === WICHTIGE BREAKPOINTS ===
@@ -156,14 +239,24 @@ p {
 
 */
 
-@media (max-width: 1024px){
-  .col-1 {width: 33.333%;}
+@media (max-width: 1024px) {
+  .col-1 {
+    width: 33.333%;
+  }
 }
-@media (max-width: 768px){
-  .col-1 {width: 50%;}
-  .col-2 {width: 100%;}
-  .col-3 {width: 100%;}
+@media (max-width: 768px) {
+  .col-1 {
+    width: 50%;
+  }
+  .col-2 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
-  .col-1 {width: 100%;}
+  .col-1 {
+    width: 100%;
+  }
 }
