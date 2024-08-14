@@ -34,6 +34,24 @@ body {
   background-color: #a62c21 !important;
 }
 
+.wichtiger-text {
+  font-weight: bold;
+}
+
+.screenreader {
+  display: none;
+}
+
+.btn-typ-1 {
+  background-color: #a62c21;
+  border: 2px solid #a62c21;
+  color: #fff;
+  padding: .4rem .6rem;
+  border-radius: 5px;
+}
+
+
+
 /* === NAVIGATIONSLEISTE === */
 
 .header-nav {
@@ -176,11 +194,34 @@ Wie viel % von 1920px sind 400px?
   background-size: contain;
 }
 
+
 /* === NEWSLETTER-BEREICH === */
 
 .newsletter-bereich {
   width: 100%;
   background-color: #3d3f45;
+}
+#nb-werbetext {
+  color: #fff;
+  font-size: 1.2rem;
+}
+#nb-form{
+  margin-top: .8rem;
+  float: right;
+  width: 100%;
+  text-align: right;
+}
+
+.nb-email-input {
+  width: 60%;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: .4rem;
+}
+
+#nb-btn {
+  height: 35px;
 }
 
 /*
