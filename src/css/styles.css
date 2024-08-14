@@ -176,6 +176,13 @@ Wie viel % von 1920px sind 400px?
   background-size: contain;
 }
 
+/* === NEWSLETTER-BEREICH === */
+
+.newsletter-bereich {
+  width: 100%;
+  background-color: #3d3f45;
+}
+
 /*
 
 === GRID-SYSTEM (SICHTBARKEIT) === 
@@ -223,6 +230,9 @@ p {
 .col-2 {
   width: 33.333%;
 }
+.col-4 {
+  width: 66.666%;
+}
 .col-3 {
   width: 50%;
 }
@@ -254,9 +264,15 @@ p {
   .col-3 {
     width: 100%;
   }
+  .col-4 {
+    width: 100%;
+  }
 }
 @media (max-width: 480px) {
-  .col-1 {
+  .col-1,
+  .col-2,
+  .col-3,
+  .col-4 {
     width: 100%;
   }
 }
