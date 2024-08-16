@@ -3,7 +3,7 @@
 /* 
 Blau:           #1F4E8C
 Dunkel Grau:    #3D3f45
-Hell Grau:      #E5E5E5
+Hell Grau:      #f0f0f0
 Rot:            #A62C21
 */
 
@@ -24,7 +24,7 @@ body {
 
 :focus {
   outline: none;
-  box-shadow: 0 0 2px 2px #e5e5e5, 0 0 10px #e5e5e5;
+  box-shadow: 0 0 2px 2px #f0f0f0, 0 0 10px #f0f0f0;
   border-radius: 3px;
 }
 section {
@@ -169,11 +169,11 @@ section {
   text-decoration: none;
 }
 #header-nav ul > li > a:hover {
-  color: #e5e5e5;
+  color: #f0f0f0;
   text-decoration: none;
 }
 #header-nav ul > li > a:active {
-  color: #e5e5e5;
+  color: #f0f0f0;
   text-decoration: none;
 }
 #header-nav ul > li > a:visited {
@@ -257,17 +257,6 @@ section {
   padding-top: 20.83%;
   background-size: contain;
 }
-
-/* 
-1920px x 400px 
-
-1000px x ??????
-
-Wie viel % von 1920px sind 400px?
-
-400 / 1920 * 100 = 20.83%
-
-*/
 
 #header-banner-klein {
   background: url("../img/hintergrund-klein.jpg") no-repeat center center;
@@ -451,6 +440,61 @@ Wie viel % von 1920px sind 400px?
 }
 @media (max-width: 480px) {
   #video-bereich video {
+    width: 100%;
+  }
+}
+
+/* === SERVICE-BEREICH === */
+
+#service-bereich {
+  background-color: #f0f0f0;
+}
+
+.service-box {
+  text-align: center;
+  width: 80%;
+}
+.service-box > h1 {
+  font-size: 1.4rem;
+}
+#service-bereich .row:nth-of-type(2) > .col-2:first-of-type > .service-box {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#service-bereich .row:nth-of-type(2) > .col-2:nth-of-type(2) > .service-box {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: url(../img/services-sprite.png);
+  background-color: #3d3f45;
+  margin-left: auto;
+  margin-right: auto;
+}
+#guenstig-icon {
+  background-position: 0 0;
+}
+#schnell-icon {
+  background-position: 240px 0;
+}
+#modern-icon {
+  background-position: 120px 0;
+}
+
+@media (max-width: 768px) {
+  #service-bereich > .container > .row:nth-of-type(2) > .col-2 > .service-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px){
+  .service-box {
     width: 100%;
   }
 }
