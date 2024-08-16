@@ -45,8 +45,8 @@ section {
 }
 @media (max-width: 786px) {
   section {
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }
 
@@ -122,13 +122,13 @@ section {
 }
 @media (max-width: 1366px) {
   .intro-container > p {
-    margin-bottom: .5rem;
-}
+    margin-bottom: 0.5rem;
+  }
 }
 @media (max-width: 1024px) {
   .intro-container > p {
     margin-bottom: 0;
-}
+  }
 }
 
 /* === NAVIGATIONSLEISTE === */
@@ -416,6 +416,42 @@ Wie viel % von 1920px sind 400px?
   }
   #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
     margin-right: 0;
+  }
+}
+
+/* === VIDEO-BEREICH === */
+
+#video-bereich {
+  background-color: #3d3f45;
+  color: #fff;
+}
+
+#video-bereich video {
+  display: block;
+  width: 35%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1440px) {
+  #video-bereich video {
+    width: 45%;
+  }
+}
+@media (max-width: 1024px) {
+  #video-bereich video {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  #video-bereich video {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  #video-bereich video {
+    width: 100%;
   }
 }
 
