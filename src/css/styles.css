@@ -523,28 +523,60 @@ section {
 
 @media (max-width: 1440px) {
   #über-uns-container > img {
-  right: 50px;
-}
+    right: 50px;
+  }
 }
 @media (max-width: 1280px) {
   #über-uns-container > img {
-  right: 0;
-}
+    right: 0;
+  }
 }
 @media (max-width: 1140px) {
   #über-uns-container > p {
-  width: 70%;
-}
+    width: 70%;
+  }
 }
 @media (max-width: 1024px) {
   #über-uns-container > img {
     display: none;
   }
   #über-uns-container > p {
-  width: 100%;
-}
+    width: 100%;
+  }
 }
 
+/* === FOOTER === */
+
+#footer {
+  background-color: #3d3f45;
+  height: 2.8rem;
+  color: #fff;
+}
+#footer-nav {
+  /* display: inline-block; */
+  float: right;
+}
+#footer-nav a {
+  text-decoration: none;
+}
+#footer-nav a:link {
+  color: #fff;
+}
+#footer-nav a:visited {
+  color: #fff;
+}
+#footer-nav a:active {
+  color: #fff;
+}
+#footer-nav a:hover {
+  color: #f0f0f0;
+}
+
+@media (max-width: 565px) {
+  #footer span {
+    display: none;
+  }
+}
 
 /*
 
