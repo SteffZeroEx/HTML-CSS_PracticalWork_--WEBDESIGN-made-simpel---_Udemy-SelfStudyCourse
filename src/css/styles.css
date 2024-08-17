@@ -762,6 +762,20 @@ section {
   }
 }
 
+/* === IMPRESSUM === */
+
+
+#impressum a {
+  color: #3d3f45;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+
+
 /*
 
 === GRID-SYSTEM (SICHTBARKEIT) === 
