@@ -335,7 +335,7 @@ section {
 
 /* === LEISTUNGEN-BEREICH === */
 
-.leistungs-box {
+.leistungs-teaser-box {
   background-color: #3d3f45;
   text-align: center;
   color: #fff;
@@ -345,16 +345,16 @@ section {
   margin-bottom: 1.6rem;
 }
 
-#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
   margin-left: 1rem;
   margin-right: auto;
 }
-#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+#leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
   margin-right: 1rem;
   margin-left: auto;
 }
 
-.leistungs-box > h2 {
+.leistungs-teaser-box > h2 {
   font-size: 1.4rem;
 }
 
@@ -383,27 +383,27 @@ section {
 }
 
 @media (max-width: 1366px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 80%;
   }
 }
 @media (max-width: 1024px) {
-  .leistungs-box {
+  .leistungs-teaser-box {
     width: 100%;
     margin-bottom: 0.6rem;
   }
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0.5rem;
   }
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: 0.5rem;
   }
 }
 @media (max-width: 768px) {
-  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(even) > .leistungs-teaser-box {
     margin-left: 0;
   }
-  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-box {
+  #leistungen-bereich .row > .col-3:nth-of-type(odd) > .leistungs-teaser-box {
     margin-right: 0;
   }
 }
@@ -578,6 +578,135 @@ section {
   }
 }
 
+/*   === LEISTUNGEN-SEITE === */
+.leistung {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+.leistung:nth-of-type(even) {
+  background-color: #f0f0f0;
+}
+.flex-container {
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 1366px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .flex-container {
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.flex-container > .intro-container {
+  width: 100%;
+}
+.leistungs-box {
+  background-color: #3d3f45;
+  flex-basis: 25%;
+  color: #fff;
+  padding: 2rem 4rem;
+  text-align: center;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+.leistungs-box-empfohlen {
+  flex-basis: 27.5%;
+  min-height: 720px;
+  box-shadow: 0 0 20px 0 #3d3f45;
+  font-size: 1.05rem;
+}
+@media (max-width: 1782px) {
+  .leistungs-box {
+    flex-basis: 27.5%;
+  }
+  .leistungs-box-empfohlen {
+    flex-basis: 30%;
+  }
+}
+@media (max-width: 1638px) {
+  .leistungs-box {
+    flex-basis: 30%;
+  }
+  .leistungs-box-empfohlen {
+    flex-basis: 32.5%;
+  }
+}
+@media (max-width: 1502px) {
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+  .flex-container {
+    align-items: stretch;
+  }
+  .leistungs-box-empfohlen {
+    min-height: initial;
+  }
+}
+@media (max-width: 1100px) {
+  .flex-container {
+    width: 85%;
+    flex-direction: column;
+    padding: 0;
+  }
+  .leistungs-box {
+    margin-bottom: 2rem;
+    min-height: initial;
+    padding: 2rem 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .flex-container {
+    width: 90%;
+  }
+}
+@media (max-width: 470px) {
+  .leistungs-box {
+    padding: 1rem 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .leistungs-box {
+    padding: 0.5rem 1rem 2rem 1rem;
+  }
+}
+.leistungs-box ul {
+  padding: 0;
+}
+.leistungs-box ul > li {
+  list-style-position: inside;
+  list-style-type: square;
+  margin-bottom: 0.5rem;
+}
+.leistungs-box h1 {
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+.leistung-auswählen-btn {
+  width: 50%;
+  height: 2.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  min-width: 170px;
+}
+.leistung-auswählen-btn:hover {
+  font-weight: normal;
+}
+
 /*
 
 === GRID-SYSTEM (SICHTBARKEIT) === 
@@ -598,6 +727,7 @@ p {
 }
 
 */
+
 /* === GRID-SYSTEM === */
 
 .container {
