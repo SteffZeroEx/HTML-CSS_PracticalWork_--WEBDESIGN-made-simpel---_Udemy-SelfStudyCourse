@@ -707,6 +707,61 @@ section {
   font-weight: normal;
 }
 
+/* === KONTAKT-SEITE === */
+
+#kontakt-formular input,
+#kontakt-formular textarea {
+  width: 100%;
+  border: 2px solid #3d3f45;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
+  color: #3d3f45;
+}
+#kontakt-formular textarea {
+  height: 100px;
+}
+#kontakt-formular input:hover,
+#kontakt-formular input:focus,
+#kontakt-formular textarea:hover,
+#kontakt-formular textarea:focus,
+#kontakt-formular button:hover {
+  border: 2px solid #a62c21;
+}
+.btn-typ-3 {
+  border: 2px solid #3d3f45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3d3f45;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+#kontakt-formular {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 1366px) {
+  #kontakt-formular {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  #kontakt-formular {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #kontakt-formular button {
+    width: 100%;
+  }
+}
+
 /*
 
 === GRID-SYSTEM (SICHTBARKEIT) === 

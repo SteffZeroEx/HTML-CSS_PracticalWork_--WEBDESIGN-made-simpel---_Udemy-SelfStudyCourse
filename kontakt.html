@@ -18,7 +18,9 @@
       <div class="container" id="desktop-nav">
         <div class="row">
           <div class="col-6">
-            <a href="index.html" class="logo-link"><img src="/src/img/webdesign-logo.png" alt="Das Logo vo WEBDESIGN made simple" /></a>
+            <a href="index.html" class="logo-link"
+              ><img src="/src/img/webdesign-logo.png" alt="Das Logo vo WEBDESIGN made simple"
+            /></a>
 
             <ul>
               <li><a href="index.html">Startseite</a></li>
@@ -33,7 +35,9 @@
       <div class="container" id="mobile-nav">
         <div class="row">
           <div class="col-6">
-            <a href="index.html" class="logo-link"><img src="/src/img/webdesign-logo.png" alt="Das Logo vo WEBDESIGN made simple" /></a>
+            <a href="index.html" class="logo-link"
+              ><img src="/src/img/webdesign-logo.png" alt="Das Logo vo WEBDESIGN made simple"
+            /></a>
             <div class="clearfix" id="mobile-nav-dropdown">
               <div id="mobile-nav-button"><span>&equiv;</span></div>
               <div class="clearfix" id="mobile-nav-content">
@@ -51,21 +55,69 @@
     </nav>
 
     <!-- HEADER-BANNER -->
-     <header id="header-banner-klein"></header>
-     <!-- FOOTER -->
-     <footer id="footer">
+    <header id="header-banner-klein"></header>
 
+    <!-- KONTAKT-BEREICH -->
+    <section id="kontakt-bereich">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <header class="intro-container">
+              <h1>Kontakt</h1>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam vel ducimus quasi cum, amet laborum hic
+                voluptas laudantium, pariatur nam incidunt tempore sint nesciunt deserunt ex cupiditate commodi delectus
+                optio!
+              </p>
+            </header>
+          </div>
+        </div>
+        <form action="kontakt.html" method="post" id="kontakt-formular">
+          <div class="row">
+            <div class="col-3">
+              <label for="vorname" class="screenreader">Vorname:</label>
+              <input type="text" name="vorname" id="vorname" placeholder="Vorname" />
+            </div>
+            <div class="col-3">
+              <label for="nachname" class="screenreader">Nachname:</label>
+              <input type="text" name="nachname" id="nachname" placeholder="Nachname" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="email" class="screenreader">Email:</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="E-Mail"
+                title="Gib eine gültige E-Mail ein!"
+                pattern="(?:[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+(?:\.[a-z0-9!#$%&'*+=?^_`\{\|\}~\-]+)*|\u0022(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@(?:(?:[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9\-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9\-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])" />
+            </div>
+          </div>
+          <div class="row">
+            <label for="nachricht" class="screenreader">Nachricht:</label>
+            <div class="col-6"><textarea name="nachricht" id="nachricht" placeholder="Nachricht"></textarea></div>
+          </div>
+          <div class="row">
+            <div class="col-6"><button class="btn-typ-3" type="submit" name="absendenButton">Senden</button></div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
       <div class="container">
         <div class="row">
           <div class="col-6">
             <span>WEBDESIGN made simple by Steffen Kieske (2024)</span>
             <nav id="footer-nav">
-            <a href="impressum.html">Impressum</a>
+              <a href="impressum.html">Impressum</a>
             </nav>
           </div>
         </div>
       </div>
-
-     </footer>
+    </footer>
   </body>
 </html>
