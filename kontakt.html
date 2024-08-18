@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./src/img/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="./src/img/favicons/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="./src/img/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#3d3f45" />
+    <meta name="msapplication-config" content="./src/img/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +21,7 @@
       rel="stylesheet" />
   </head>
   <body>
-    <!-- === NAVIGATIONSLEISTE === -->
+    <!-- ? === NAVIGATIONSLEISTE === -->
 
     <nav id="header-nav">
       <div class="container" id="desktop-nav">
@@ -54,10 +63,10 @@
       </div>
     </nav>
 
-    <!-- HEADER-BANNER -->
+    <!-- ? HEADER-BANNER -->
     <header id="header-banner-klein"></header>
 
-    <!-- KONTAKT-BEREICH -->
+    <!-- ? KONTAKT-BEREICH -->
     <section id="kontakt-bereich">
       <div class="container">
         <div class="row">
@@ -100,13 +109,15 @@
             <div class="col-6"><textarea name="nachricht" id="nachricht" placeholder="Nachricht"></textarea></div>
           </div>
           <div class="row">
-            <div class="col-6"><button class="btn-typ-3" type="submit" name="absendenButton">Senden</button></div>
+            <div class="col-6">
+              <button id="absendenButton" class="btn-typ-3" type="submit" name="absendenButton">Senden</button>
+            </div>
           </div>
         </form>
       </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ? FOOTER -->
     <footer id="footer">
       <div class="container">
         <div class="row">

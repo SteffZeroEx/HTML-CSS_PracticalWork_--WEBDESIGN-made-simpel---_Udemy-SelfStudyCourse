@@ -1,4 +1,4 @@
-/* === FARBEN === */
+/* ? === FARBEN === */
 
 /* 
 Blau:           #1F4E8C
@@ -7,7 +7,7 @@ Hell Grau:      #f0f0f0
 Rot:            #A62C21
 */
 
-/* === GLOBAL === */
+/* ? === GLOBAL === */
 html {
   font-size: 16px;
 }
@@ -50,7 +50,7 @@ section {
   }
 }
 
-/* === GENERELLES === */
+/* ? === GENERELLES === */
 
 .clearfix::after {
   content: "";
@@ -76,21 +76,35 @@ section {
   color: #fff;
   padding: 0.4rem 0.6rem;
   border-radius: 5px;
+  transition: border 0.5s ease-in-out;
 }
 .btn-typ-1:hover {
-  background-color: #a62c21;
   border: 2px solid #fff;
   border-radius: 5px;
 }
 .btn-typ-2 {
   border: 2px solid #fff;
+  border-radius: 5px;
   background-color: transparent;
   color: #fff;
   padding: 0.4rem 0.6rem;
+  transition: color 0.5s ease-in-out, border 0.5s ease-in-out;
 }
 .btn-typ-2:hover {
   color: #a62c21;
-  font-weight: bolder;
+  border: 2px solid #a62c21;
+}
+
+.btn-typ-3 {
+  border: 2px solid #3d3f45;
+  background-color: transparent;
+  font-size: 1rem;
+  color: #3d3f45;
+  border-radius: 5px;
+  transition: border 0.5s ease-in-out;
+}
+
+.btn-typ-3:hover {
   border: 2px solid #a62c21;
 }
 
@@ -131,7 +145,7 @@ section {
   }
 }
 
-/* === NAVIGATIONSLEISTE === */
+/* ? === NAVIGATIONSLEISTE === */
 
 #header-nav {
   width: 100%;
@@ -195,7 +209,7 @@ section {
   display: inline-block;
 }
 
-/* === NAVIGATIONSLEISTE (MOBIL) === */
+/* ? === NAVIGATIONSLEISTE (MOBIL) === */
 
 #mobile-nav-button {
   color: #fff;
@@ -248,7 +262,7 @@ section {
   }
 }
 
-/* === HEADER-BANNER === */
+/* ? === HEADER-BANNER === */
 
 #header-banner {
   background: url("../img/hintergrund.jpg") no-repeat center center;
@@ -266,7 +280,7 @@ section {
   background-size: contain;
 }
 
-/* === NEWSLETTER-BEREICH === */
+/* ? === NEWSLETTER-BEREICH === */
 
 #newsletter-bereich {
   width: 100%;
@@ -333,7 +347,62 @@ section {
   }
 }
 
-/* === LEISTUNGEN-BEREICH === */
+/* ? === ANIMIERTES LOGO === */
+
+@keyframes logoAnimation {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  11.111% {
+    transform: rotateZ(0deg);
+  }
+  22.222% {
+    transform: rotateZ(90deg);
+  }
+  33.333% {
+    transform: rotateZ(90deg);
+  }
+  44.444% {
+    transform: rotateZ(180deg);
+  }
+  55.555% {
+    transform: rotateZ(180deg);
+  }
+  66.666% {
+    transform: rotateZ(270deg);
+  }
+  77.777% {
+    transform: rotateZ(270deg);
+  }
+  88.888% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+#animiertes-logo {
+  height: 150px;
+  width: 150px;
+  background-color: #3d3f45;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  padding: 25px;
+}
+#animiertes-logo > img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  filter: drop-shadow(0 0 2px #f0f0f0);
+  animation: logoAnimation 8s ease-in-out infinite;
+}
+
+/* ? === LEISTUNGEN-BEREICH === */
 
 .leistungs-teaser-box {
   background-color: #3d3f45;
@@ -378,7 +447,6 @@ section {
 }
 .leistung-ansehen-btn:hover {
   color: #a62c21;
-  font-weight: bolder;
   border: 2px solid #a62c21;
 }
 
@@ -408,7 +476,7 @@ section {
   }
 }
 
-/* === VIDEO-BEREICH === */
+/* ? === VIDEO-BEREICH === */
 
 #video-bereich {
   background-color: #3d3f45;
@@ -421,6 +489,7 @@ section {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 5px;
 }
 
 @media (max-width: 1440px) {
@@ -444,7 +513,7 @@ section {
   }
 }
 
-/* === SERVICE-BEREICH === */
+/* ? === SERVICE-BEREICH === */
 
 #service-bereich {
   background-color: #f0f0f0;
@@ -475,6 +544,10 @@ section {
   background-color: #3d3f45;
   margin-left: auto;
   margin-right: auto;
+  transition: transform 1s ease-in-out;
+}
+.service-icon:hover {
+  transform: rotateZ(360deg);
 }
 #guenstig-icon {
   background-position: 0 0;
@@ -499,7 +572,7 @@ section {
   }
 }
 
-/* === ÜBER-UNS-BEREICH === */
+/* ? === ÜBER-UNS-BEREICH === */
 
 #über-uns-bereich {
   background-color: #fff;
@@ -578,7 +651,7 @@ section {
   }
 }
 
-/*   === LEISTUNGEN-SEITE === */
+/* ?   === LEISTUNGEN-SEITE === */
 .leistung {
   padding-top: 2rem;
   padding-bottom: 4rem;
@@ -707,7 +780,7 @@ section {
   font-weight: normal;
 }
 
-/* === KONTAKT-SEITE === */
+/* ? === KONTAKT-SEITE === */
 
 #kontakt-formular input,
 #kontakt-formular textarea {
@@ -718,25 +791,20 @@ section {
   font-size: 1rem;
   font-family: "Raleway", "Lato", "Helvetica Neue", "Arial", sans-serif;
   color: #3d3f45;
+  transition: border 0.5s ease-in-out;
 }
 #kontakt-formular textarea {
   height: 100px;
 }
 #kontakt-formular input:hover,
-#kontakt-formular input:focus,
-#kontakt-formular textarea:hover,
-#kontakt-formular textarea:focus,
-#kontakt-formular button:hover {
+#kontakt-formular textarea:hover
+ {
   border: 2px solid #a62c21;
 }
-.btn-typ-3 {
-  border: 2px solid #3d3f45;
-  background-color: transparent;
-  font-size: 1rem;
-  color: #3d3f45;
+
+#absendenButton {
+  height: 39px;
   width: 150px;
-  height: 40px;
-  border-radius: 5px;
 }
 
 #kontakt-formular {
@@ -764,17 +832,11 @@ section {
 
 /* === IMPRESSUM === */
 
-
 #impressum a {
   color: #3d3f45;
   text-decoration: none;
   font-weight: bold;
 }
-
-
-
-
-
 
 /*
 
